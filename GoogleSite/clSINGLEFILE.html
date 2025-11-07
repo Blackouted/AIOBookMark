@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #2e3244 0%, #36224b 100%);
+            background: black;
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -43,7 +43,7 @@
         }
 
         .sidebar-btn {
-            background: rgb(89, 134, 218);
+            background: #686869;
             border: none;
             padding: 12px;
             font-size: 18px;
@@ -57,7 +57,7 @@
         }
 
         .sidebar-btn:hover {
-            background: #79aadb;
+            background: #ebebeb;
             transform: scale(1.05);
         }
 
@@ -68,7 +68,7 @@
 
         .sidebar-btn.empty:hover {
             transform: none;
-            background: rgb(89, 134, 218);
+            background: #ebebe;
         }
 
         .main-content {
@@ -122,7 +122,7 @@
         }
 
         input[type="button"] {
-            background: rgb(89, 134, 218);
+            background: #686869;
             border: none;
             padding: 15px 30px;
             font-size: 16px;
@@ -140,7 +140,7 @@
         input[type="button"]:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-            background: #79aadb;
+            background: #ebebeb;
         }
 
         input[type="button"]:active {
@@ -170,25 +170,16 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <h1>UGS Files</h1>
+        <h1>AIO Bookmark</h1>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
-    Files from 
-    <a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/" 
-        target="_blank" 
-        style="display: inline; color: #79aadb; text-decoration: none; font-size: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        Ultimate Game Stash Google Doc
+    Credits: 
+    
+        Ultimate Game Stash (Games), __ (Configuring for bookmarks)
+        BEWARE: Some games DO NOT work
     </a>
     </h2>
     <h2 style="color: white; text-align: center; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: normal; font-size: 18px;">
-    Discord Server:
-    <a href="https://discord.gg/rmVsAqkpkA" 
-        target="_blank" 
-        style="display: inline; color: #79aadb; text-decoration: none; font-size: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        https://discord.gg/rmVsAqkpkA
-    </a>
-    </h2>
-
-        
+    
         <div id="sections-container">
         </div>
     </div>
@@ -1931,7 +1922,7 @@ const files = [
         function generateAllSections() {
             const allChars = ['0','1','2','3','4','5','6','7','8','9',
                             'A','B','C','D','E','F','G','H','I','J','K','L','M',
-                            'N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+                            'N','O','P','Q','R','S','T','U','V','W','X','Y','Z',];
             
             const filesByChar = {};
             allChars.forEach(char => {
@@ -2031,4 +2022,3 @@ const files = [
 </body>
 </html>
 	
-
